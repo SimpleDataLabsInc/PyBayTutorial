@@ -12,10 +12,8 @@ def pipeline(spark: SparkSession) -> None:
     df_CastDataTypes = CastDataTypes(spark, df_FilterOutBadZips)
     df_SumIncomeBracketsByZip = SumIncomeBracketsByZip(spark, df_CastDataTypes)
     df_CalcIsHighIncome = CalcIsHighIncome(spark, df_SumIncomeBracketsByZip)
-    df_Reformat_2 = Reformat_2(spark)
     df_FarmersMarketSource = FarmersMarketSource(spark)
     df_FilterOutNullZips = FilterOutNullZips(spark, df_FarmersMarketSource)
-    Target_1(spark)
     df_CountFarmersMarketsByZip = CountFarmersMarketsByZip(spark, df_FilterOutNullZips)
     df_JoinFarmersMarketsAndIncome = JoinFarmersMarketsAndIncome(
         spark, 
@@ -23,6 +21,8 @@ def pipeline(spark: SparkSession) -> None:
         df_CalcIsHighIncome
     )
     df_CalcHasFm = CalcHasFm(spark, df_JoinFarmersMarketsAndIncome)
+    df_CalcCases = CalcCases(spark, df_CalcHasFm)
+    Target_1(spark)
 
 def main():
     spark = SparkSession.builder\
