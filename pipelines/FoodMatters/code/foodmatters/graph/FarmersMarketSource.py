@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from foodmatters.config.ConfigStore import *
 from foodmatters.udfs.UDFs import *
 
-def market_data(spark: SparkSession) -> DataFrame:
+def FarmersMarketSource(spark: SparkSession) -> DataFrame:
     return spark.read\
         .schema(
           StructType([

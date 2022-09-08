@@ -7,15 +7,22 @@ from prophecy.utils import *
 from foodmatters.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df__soi_zipcode_agi = _soi_zipcode_agi(spark)
-    df_FilterOutBadZips = FilterOutBadZips(spark, df__soi_zipcode_agi)
+    df_IRSZipCodesSource = IRSZipCodesSource(spark)
+    df_FilterOutBadZips = FilterOutBadZips(spark, df_IRSZipCodesSource)
     df_CastDataTypes = CastDataTypes(spark, df_FilterOutBadZips)
     df_SumIncomeBracketsByZip = SumIncomeBracketsByZip(spark, df_CastDataTypes)
     df_CalcIsHighIncome = CalcIsHighIncome(spark, df_SumIncomeBracketsByZip)
-    df_market_data = market_data(spark)
-    df_FilterOutNullZips = FilterOutNullZips(spark, df_market_data)
+    df_Reformat_2 = Reformat_2(spark)
+    df_FarmersMarketSource = FarmersMarketSource(spark)
+    df_FilterOutNullZips = FilterOutNullZips(spark, df_FarmersMarketSource)
+    Target_1(spark)
     df_CountFarmersMarketsByZip = CountFarmersMarketsByZip(spark, df_FilterOutNullZips)
-    df_Join_1 = Join_1(spark, df_CountFarmersMarketsByZip, df_CalcIsHighIncome)
+    df_JoinFarmersMarketsAndIncome = JoinFarmersMarketsAndIncome(
+        spark, 
+        df_CountFarmersMarketsByZip, 
+        df_CalcIsHighIncome
+    )
+    df_CalcHasFm = CalcHasFm(spark, df_JoinFarmersMarketsAndIncome)
 
 def main():
     spark = SparkSession.builder\

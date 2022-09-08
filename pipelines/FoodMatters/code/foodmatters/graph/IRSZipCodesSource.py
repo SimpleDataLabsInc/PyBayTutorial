@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from foodmatters.config.ConfigStore import *
 from foodmatters.udfs.UDFs import *
 
-def _soi_zipcode_agi(spark: SparkSession) -> DataFrame:
+def IRSZipCodesSource(spark: SparkSession) -> DataFrame:
     return spark.read\
         .schema(
           StructType([
