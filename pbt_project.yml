@@ -18,6 +18,17 @@ pipelines:
       - 3154/datasets/2013_soi_zipcode_agi
       outputs: []
     dependencies: {}
+  pipelines/MyFirstPipeline:
+    name: MyFirstPipeline
+    description: ''
+    author: anya.bida@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2022-09-10 00:44:33'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets:
   datasets/market_data:
     name: market_data

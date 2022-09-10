@@ -97,6 +97,24 @@
     "sourcePort" : "VN3UyS4sgj5RlfOg67rxf$$knIEqHsj2D76lCNlBX1wT",
     "target" : "CojryOr2PbBpv5CXeZR9m$$Z1g9c5OW3o3QS7zIfRG-6",
     "targetPort" : "038NpVJtljCMrqoWYhiSR$$o1D0BqSY0cZIrY_aOd0pI"
+  }, {
+    "id" : "Q-sGY5x1ur9f0HD4bJZns",
+    "source" : "Yxyg0SvJM5nWsBnXeMaN5$$vOB3I7kKY2AbUa6l7uO3l",
+    "sourcePort" : "RbW5wh-9ODM4OcxEvYwDt$$DawpaK4fb7CmxWa1Wxb6s",
+    "target" : "75g7o8sH_gHqacs7jCENd$$8u__29Vp2vuHhU89c7mmQ",
+    "targetPort" : "2ItCgMBtjvnte4usKT2Oi$$Sn87YM2QFVrwPjMiQnbdz"
+  }, {
+    "id" : "Ea3_uXbzss7EDP9RHeuIV",
+    "source" : "75g7o8sH_gHqacs7jCENd$$8u__29Vp2vuHhU89c7mmQ",
+    "sourcePort" : "7r-Pz9H-nmAFURZILtkZm$$LRZmwDV1jnSm76WPqZt6R",
+    "target" : "9rxounAiZpZFgXQFHDhGt$$4xotGoqmIqsUQTVFnnx40",
+    "targetPort" : "zSe2mui607SaDsRwMUbKO$$i7W9_F-x-d0wfltC3klHp"
+  }, {
+    "id" : "JfY1X28hTHc96dkFlZ-9j",
+    "source" : "FWCp5N2BgoUVsdKsztiep$$7O2S74SnA9UjLFhIJZOYU",
+    "sourcePort" : "mrp4AxYhl3DsRqjVYsHz1$$dJJYKUXxKBDB1pyQN_-CM",
+    "target" : "atysZfq7RoU7ZfAQm9SEu$$_R-VkAeYTQYHS87ajRFL3",
+    "targetPort" : "sEIJvdzXIWY5RHyj2poUH$$qUlpbJEfMq381ga2Yrlj_"
   } ],
   "processes" : {
     "0DEJAiTf9UBHDURDiLfj2$$U7KOCFLoxaja5FN-YgEv8" : {
@@ -105,8 +123,8 @@
       "metadata" : {
         "label" : "CalcIsHighIncome",
         "slug" : "CalcIsHighIncome",
-        "x" : 545.0009770049999,
-        "y" : 345,
+        "x" : 530.0009770049999,
+        "y" : 555,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -125,7 +143,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "jKlFxPbNPDBOcnWQ7N6NW$$HMTK8whVKAmfmAsemku32##zipcode", "jKlFxPbNPDBOcnWQ7N6NW$$HMTK8whVKAmfmAsemku32##high_income_returns", "jKlFxPbNPDBOcnWQ7N6NW$$HMTK8whVKAmfmAsemku32##low_income_returns", "jKlFxPbNPDBOcnWQ7N6NW$$HMTK8whVKAmfmAsemku32##all_returns" ],
+        "columnsSelector" : [ "jKlFxPbNPDBOcnWQ7N6NW$$HMTK8whVKAmfmAsemku32##zipcode", "jKlFxPbNPDBOcnWQ7N6NW$$HMTK8whVKAmfmAsemku32##high_income_returns", "jKlFxPbNPDBOcnWQ7N6NW$$HMTK8whVKAmfmAsemku32##all_returns", "jKlFxPbNPDBOcnWQ7N6NW$$HMTK8whVKAmfmAsemku32##low_income_returns" ],
         "expressions" : [ {
           "target" : "high_income_percent",
           "expression" : {
@@ -177,8 +195,8 @@
       "metadata" : {
         "label" : "CastDataTypes",
         "slug" : "CastDataTypes",
-        "x" : 145.00062510098644,
-        "y" : 345,
+        "x" : 130.00062510098633,
+        "y" : 555,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -228,8 +246,8 @@
       "metadata" : {
         "label" : "FilterOutBadZips",
         "slug" : "FilterOutBadZips",
-        "x" : -54.999819071193656,
-        "y" : 345,
+        "x" : -69.99981907119354,
+        "y" : 555,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -261,8 +279,8 @@
       "metadata" : {
         "label" : "IRSZipCodesSource",
         "slug" : "IRSZipCodesSource",
-        "x" : -254.99963604559593,
-        "y" : 345,
+        "x" : -269.99963604559593,
+        "y" : 555,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -287,8 +305,8 @@
       "metadata" : {
         "label" : "CalcCases",
         "slug" : "CalcCases",
-        "x" : 1117.200363954404,
-        "y" : 186.33680555555551,
+        "x" : 1102.200363954404,
+        "y" : 396.33680555555554,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -311,14 +329,47 @@
         "expressions" : [ ]
       }
     },
+    "9rxounAiZpZFgXQFHDhGt$$4xotGoqmIqsUQTVFnnx40" : {
+      "id" : "9rxounAiZpZFgXQFHDhGt$$4xotGoqmIqsUQTVFnnx40",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : 1114.800363954404,
+        "y" : 592.3095316569011,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "zSe2mui607SaDsRwMUbKO$$i7W9_F-x-d0wfltC3klHp",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "YOQHLyPPbu_ngoYVrmIEb$$Qtk5RRzovz-lNQ9PjTahD",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "true"
+        }
+      }
+    },
     "qzGnepYZ9WLlYfEKVB5SB$$3Vu2stUWN1ETGLNGIsPjx" : {
       "id" : "qzGnepYZ9WLlYfEKVB5SB$$3Vu2stUWN1ETGLNGIsPjx",
       "component" : "Filter",
       "metadata" : {
         "label" : "FilterOutNullZips",
         "slug" : "FilterOutNullZips",
-        "x" : -54.99944366264481,
-        "y" : 35,
+        "x" : -69.99944366264481,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -344,38 +395,14 @@
         }
       }
     },
-    "wxj5a7UKVfe44pHdo5QZv$$7eUnj7whM2ezPYekjIzKn" : {
-      "id" : "wxj5a7UKVfe44pHdo5QZv$$7eUnj7whM2ezPYekjIzKn",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "Target_1",
-        "slug" : "Target_1",
-        "x" : 1357.200363954404,
-        "y" : 201.33680555555551,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "YCfgzIATOQsR8h-IlhYPC$$pPWPMDS4LOgvq07G7Z3Re",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : { }
-    },
     "crJk3OhjiXEKA2fOuQbzG$$3emeVOPfPOh63W5H-1Z5W" : {
       "id" : "crJk3OhjiXEKA2fOuQbzG$$3emeVOPfPOh63W5H-1Z5W",
       "component" : "Reformat",
       "metadata" : {
         "label" : "CalcHasFm",
         "slug" : "CalcHasFm",
-        "x" : 982.200363954404,
-        "y" : 186.33680555555551,
+        "x" : 967.200363954404,
+        "y" : 396.33680555555554,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -394,7 +421,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "sePRCtVMzuZmGqUIDtNgj$$9gmcWvKyxdCTSaWaVzjeO##high_income_returns", "sePRCtVMzuZmGqUIDtNgj$$9gmcWvKyxdCTSaWaVzjeO##zip", "sePRCtVMzuZmGqUIDtNgj$$9gmcWvKyxdCTSaWaVzjeO##zipcode", "sePRCtVMzuZmGqUIDtNgj$$9gmcWvKyxdCTSaWaVzjeO##num_farmers_markets", "sePRCtVMzuZmGqUIDtNgj$$9gmcWvKyxdCTSaWaVzjeO##high_income_percent" ],
+        "columnsSelector" : [ "sePRCtVMzuZmGqUIDtNgj$$9gmcWvKyxdCTSaWaVzjeO##zip", "sePRCtVMzuZmGqUIDtNgj$$9gmcWvKyxdCTSaWaVzjeO##num_farmers_markets", "sePRCtVMzuZmGqUIDtNgj$$9gmcWvKyxdCTSaWaVzjeO##high_income_returns", "sePRCtVMzuZmGqUIDtNgj$$9gmcWvKyxdCTSaWaVzjeO##high_income_percent", "sePRCtVMzuZmGqUIDtNgj$$9gmcWvKyxdCTSaWaVzjeO##zipcode" ],
         "expressions" : [ {
           "target" : "zip",
           "expression" : {
@@ -446,8 +473,8 @@
       "metadata" : {
         "label" : "FarmersMarketSource",
         "slug" : "FarmersMarketSource",
-        "x" : -254.9992840175163,
-        "y" : 35,
+        "x" : -269.9992840175164,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -466,14 +493,93 @@
         "datasetId" : "3154/datasets/market_data"
       }
     },
+    "75g7o8sH_gHqacs7jCENd$$8u__29Vp2vuHhU89c7mmQ" : {
+      "id" : "75g7o8sH_gHqacs7jCENd$$8u__29Vp2vuHhU89c7mmQ",
+      "component" : "Repartition",
+      "metadata" : {
+        "label" : "Repartition",
+        "slug" : "Repartition",
+        "x" : 928.4403786028415,
+        "y" : 584.6466684977213,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2ItCgMBtjvnte4usKT2Oi$$Sn87YM2QFVrwPjMiQnbdz",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "7r-Pz9H-nmAFURZILtkZm$$LRZmwDV1jnSm76WPqZt6R",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "overwriteDefaultNPartitions" : true,
+        "hashExpressions" : [ {
+          "format" : "sql",
+          "expression" : "num_farmers_markets"
+        } ],
+        "columnsSelector" : [ "2ItCgMBtjvnte4usKT2Oi$$Sn87YM2QFVrwPjMiQnbdz##zipcode", "2ItCgMBtjvnte4usKT2Oi$$Sn87YM2QFVrwPjMiQnbdz##num_farmers_markets" ],
+        "repartitionType" : "coalesce",
+        "rangeExpressions" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zipcode"
+          },
+          "sortType" : ""
+        } ],
+        "defaultPartitions" : "3",
+        "nPartitions" : "2"
+      }
+    },
+    "atysZfq7RoU7ZfAQm9SEu$$_R-VkAeYTQYHS87ajRFL3" : {
+      "id" : "atysZfq7RoU7ZfAQm9SEu$$_R-VkAeYTQYHS87ajRFL3",
+      "component" : "Repartition",
+      "metadata" : {
+        "label" : "Repartition_1",
+        "slug" : "Repartition_1",
+        "x" : 458.40036395440404,
+        "y" : 143.75476582845053,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sEIJvdzXIWY5RHyj2poUH$$qUlpbJEfMq381ga2Yrlj_",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "sRrTDo6P_tR7plN9Pxdzg$$j1O_P4xDNIYFj-OAA_dKE",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "overwriteDefaultNPartitions" : false,
+        "hashExpressions" : [ ],
+        "columnsSelector" : [ ],
+        "repartitionType" : "coalesce",
+        "rangeExpressions" : [ ],
+        "defaultPartitions" : null,
+        "nPartitions" : "10"
+      }
+    },
     "Yxyg0SvJM5nWsBnXeMaN5$$vOB3I7kKY2AbUa6l7uO3l" : {
       "id" : "Yxyg0SvJM5nWsBnXeMaN5$$vOB3I7kKY2AbUa6l7uO3l",
       "component" : "Join",
       "metadata" : {
         "label" : "JoinFarmersMarketsAndIncome",
         "slug" : "JoinFarmersMarketsAndIncome",
-        "x" : 840.0007552336419,
-        "y" : 190,
+        "x" : 765.0007552336419,
+        "y" : 400,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -507,7 +613,7 @@
         "hints" : [ {
           "id" : "Lp_zSG22jgxik_pJUlOj8$$7ZuDv6k1d-If_7XRuWQlb",
           "alias" : "farmers_markets",
-          "hintType" : "none",
+          "hintType" : "shuffle_hash",
           "propagateColumns" : false
         }, {
           "id" : "qDMT0LWO_RqCNTe36kyop$$xJo0-12L3Yndzv428tKBF",
@@ -516,8 +622,8 @@
           "propagateColumns" : false
         } ],
         "allIn1" : null,
-        "activeTab" : "conditions",
-        "columnsSelector" : [ "qDMT0LWO_RqCNTe36kyop$$xJo0-12L3Yndzv428tKBF##zipcode", "Lp_zSG22jgxik_pJUlOj8$$7ZuDv6k1d-If_7XRuWQlb##zip" ],
+        "activeTab" : "advanced",
+        "columnsSelector" : [ "Lp_zSG22jgxik_pJUlOj8$$7ZuDv6k1d-If_7XRuWQlb##zip", "qDMT0LWO_RqCNTe36kyop$$xJo0-12L3Yndzv428tKBF##zipcode" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "farmers_markets"
@@ -529,8 +635,8 @@
       "metadata" : {
         "label" : "CountFarmersMarketsByZip",
         "slug" : "CountFarmersMarketsByZip",
-        "x" : 145.0008035343567,
-        "y" : 35,
+        "x" : 130.0008035343567,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -582,8 +688,8 @@
       "metadata" : {
         "label" : "SumIncomeBracketsByZip",
         "slug" : "SumIncomeBracketsByZip",
-        "x" : 345.00050819382204,
-        "y" : 345,
+        "x" : 330.00050819382204,
+        "y" : 555,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -633,7 +739,7 @@
         "pivotColumn" : null,
         "pivotValues" : [ ],
         "activeTab" : "aggregate",
-        "columnsSelector" : [ "XYx0R9I49qA-aMNBAKY8f$$E19bAXORKawcRAWrZwKw6##zipcode", "XYx0R9I49qA-aMNBAKY8f$$E19bAXORKawcRAWrZwKw6##income_bracket", "XYx0R9I49qA-aMNBAKY8f$$E19bAXORKawcRAWrZwKw6##num_returns" ],
+        "columnsSelector" : [ "XYx0R9I49qA-aMNBAKY8f$$E19bAXORKawcRAWrZwKw6##zipcode", "XYx0R9I49qA-aMNBAKY8f$$E19bAXORKawcRAWrZwKw6##num_returns", "XYx0R9I49qA-aMNBAKY8f$$E19bAXORKawcRAWrZwKw6##income_bracket" ],
         "groupBy" : [ {
           "target" : "zipcode",
           "expression" : {
