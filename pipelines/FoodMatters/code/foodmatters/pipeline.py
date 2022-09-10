@@ -24,6 +24,7 @@ def pipeline(spark: SparkSession) -> None:
     df_CalcCases = CalcCases(spark, df_CalcHasFm)
     df_Repartition = Repartition(spark, df_JoinFarmersMarketsAndIncome)
     df_Filter_1 = Filter_1(spark, df_Repartition)
+    df_Repartition_1 = Repartition_1(spark, df_CountFarmersMarketsByZip)
 
 def main():
     spark = SparkSession.builder\
