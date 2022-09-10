@@ -572,7 +572,7 @@
         "hints" : [ {
           "id" : "Lp_zSG22jgxik_pJUlOj8$$7ZuDv6k1d-If_7XRuWQlb",
           "alias" : "farmers_markets",
-          "hintType" : "shuffle_hash",
+          "hintType" : "none",
           "propagateColumns" : false
         }, {
           "id" : "qDMT0LWO_RqCNTe36kyop$$xJo0-12L3Yndzv428tKBF",
