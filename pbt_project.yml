@@ -20,11 +20,11 @@ pipelines:
     dependencies: {}
   pipelines/MyFirstPipeline:
     name: MyFirstPipeline
-    description: following the learning python tutorial
+    description: ''
     author: anya.bida@gmail.com
     mode: batch
     language: python
-    createdAt: '2022-09-10 00:20:30'
+    createdAt: '2022-09-10 00:44:33'
     datasets:
       inputs: []
       outputs: []
