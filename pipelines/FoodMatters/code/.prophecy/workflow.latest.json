@@ -362,8 +362,8 @@
       "metadata" : {
         "label" : "FilterOutNullZips",
         "slug" : "FilterOutNullZips",
-        "x" : -54.99944366264481,
-        "y" : -220,
+        "x" : -69.99944366264481,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -468,7 +468,7 @@
         "label" : "FarmersMarketSource",
         "slug" : "FarmersMarketSource",
         "x" : -269.9992840175164,
-        "y" : -220,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -572,7 +572,7 @@
         "hints" : [ {
           "id" : "Lp_zSG22jgxik_pJUlOj8$$7ZuDv6k1d-If_7XRuWQlb",
           "alias" : "farmers_markets",
-          "hintType" : "none",
+          "hintType" : "shuffle_hash",
           "propagateColumns" : false
         }, {
           "id" : "qDMT0LWO_RqCNTe36kyop$$xJo0-12L3Yndzv428tKBF",
@@ -581,7 +581,7 @@
           "propagateColumns" : false
         } ],
         "allIn1" : null,
-        "activeTab" : "conditions",
+        "activeTab" : "advanced",
         "columnsSelector" : [ "Lp_zSG22jgxik_pJUlOj8$$7ZuDv6k1d-If_7XRuWQlb##zip", "qDMT0LWO_RqCNTe36kyop$$xJo0-12L3Yndzv428tKBF##zipcode" ],
         "allIn0" : null,
         "whereClause" : null,
@@ -594,8 +594,8 @@
       "metadata" : {
         "label" : "CountFarmersMarketsByZip",
         "slug" : "CountFarmersMarketsByZip",
-        "x" : 145.0008035343567,
-        "y" : -220,
+        "x" : 130.0008035343567,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
