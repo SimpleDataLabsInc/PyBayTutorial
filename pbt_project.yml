@@ -1,6 +1,6 @@
 name: LearnPySpark
 description: ''
-version: '0.1'
+version: '0.2'
 author: anya.bida@gmail.com
 language: python
 buildSystem: wheel
